@@ -1,0 +1,35 @@
+MongoDB is the one which uses the concept of NoSQL
+
+Q. What is the Mongo and Mongo D ?
+Ans. It can be understood as :-
+Mongo is like a Programming language and Mongo D is the compiler like structure which help in running the background parts like collecting data from database 
+connecting to the host , manages all the background activity.
+
+Mongo DB commands
+1. show dbs; -> To see the list of the databases
+2. use <database name>--> To create the new database
+3. db -> To see the current database 
+
+Note: while using "use <new database name>" to will reflect in the show dbs only when you have in database when there is atleast one table(collection)
+also some things name change in Mongo DB that we generally use in the sql which are:
+DB ------------------->DB
+Tables---------------->Collection
+Rows------------------>Document
+
+4. db is the object or the current database we are in and it acts like an object and it is having some functions:
+	->db.CreateCollection('<table name>') --> Used for creating collection or if we conentionally say we 
+	->
+5. show collections -> It is used to find tables present in the database 
+
+Note: There are two ways of creating the tables :
+	1. db.createCollection()
+	2. db.<new table name>.insert({values})
+However the advantage of using the 1st over the second is : db.createCollection('<table name>',{capped=true,size="size in bytes",max="no of rows"})
+
+There are two types of the document:
+1. Embedded document -> They are those kind of document which contain one docuent inside another document
+2. Relational document
+
+When you want to insert multiple data in the insert statement then the possible way of doing it is :
+varr arr=[{},{},{}]
+
